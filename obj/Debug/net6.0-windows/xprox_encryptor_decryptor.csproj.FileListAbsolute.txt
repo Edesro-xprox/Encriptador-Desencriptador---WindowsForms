@@ -1,0 +1,17 @@
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\bin\Debug\net6.0-windows\xprox_encryptor_decryptor.exe
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\bin\Debug\net6.0-windows\xprox_encryptor_decryptor.deps.json
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\bin\Debug\net6.0-windows\xprox_encryptor_decryptor.runtimeconfig.json
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\bin\Debug\net6.0-windows\xprox_encryptor_decryptor.dll
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\bin\Debug\net6.0-windows\xprox_encryptor_decryptor.pdb
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.Form1.resources
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.dll
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\refint\xprox_encryptor_decryptor.dll
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.pdb
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\xprox_encryptor_decryptor.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\proyectosEDS\xprox_encryptor_decryptor\obj\Debug\net6.0-windows\ref\xprox_encryptor_decryptor.dll
