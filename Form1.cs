@@ -15,50 +15,18 @@ namespace xprox_encryptor_decryptor
         public Form1()
         {
             InitializeComponent();
-            
-            radioBtn1_encrypt_decryptor.CheckedChanged += RadioButton_CheckedChanged;
-            radioBtn2_encrypt_decryptor.CheckedChanged += RadioButton_CheckedChanged;
         }
 
-        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        private void btnEncrypt_Click(object sender, EventArgs e)
         {
-            CheckActiveRadioButton();
+            codeEncrypt = EncryptText(code);
+            richTextBox2_encryptor_decryptor.Text = codeEncrypt;
         }
 
-        private void CheckActiveRadioButton()
+        private void btnDecryptor_Click(object sender, EventArgs e)
         {
-            if (radioBtn1_encrypt_decryptor.Checked)
-            {
-                if (IsPlainText(code))
-                {
-                    codeEncrypt = EncryptText(code);
-                    richTextBox2_encryptor_decryptor.Text = codeEncrypt;
-                    if (string.IsNullOrEmpty(codeEncrypt))
-                    {
-                        richTextBox2_encryptor_decryptor.Text = "";
-                    }
-                }
-                else
-                {
-                    richTextBox2_encryptor_decryptor.Text = "";
-                }
-            }
-            else if (radioBtn2_encrypt_decryptor.Checked)
-            {
-                if (IsBase64String(code))
-                {
-                    codeDecryptor = DecryptText(codeEncrypt);
-                    richTextBox2_encryptor_decryptor.Text = codeDecryptor;
-                    if (string.IsNullOrEmpty(codeDecryptor))
-                    {
-                        richTextBox2_encryptor_decryptor.Text = "";
-                    }
-                }
-                else
-                {
-                    richTextBox2_encryptor_decryptor.Text = "";
-                }
-            }
+            codeDecryptor = DecryptText(code);
+            richTextBox2_encryptor_decryptor.Text = codeDecryptor;
         }
 
         private void richTextBox1_encrypt_decryptor_TextChanged(object sender, EventArgs e)

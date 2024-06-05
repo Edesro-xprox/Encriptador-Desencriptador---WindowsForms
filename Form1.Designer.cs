@@ -28,14 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button btnEncrypt;
             this.richTextBox1_encrypt_decryptor = new System.Windows.Forms.RichTextBox();
             this.richTextBox2_encryptor_decryptor = new System.Windows.Forms.RichTextBox();
             this.xprox_encrypt_decryptor = new System.Windows.Forms.Label();
-            this.radioBtn2_encrypt_decryptor = new System.Windows.Forms.RadioButton();
-            this.radioBtn1_encrypt_decryptor = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDecryptor = new System.Windows.Forms.Button();
+            btnEncrypt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnEncrypt
+            // 
+            btnEncrypt.Location = new System.Drawing.Point(15, 25);
+            btnEncrypt.Name = "btnEncrypt";
+            btnEncrypt.Size = new System.Drawing.Size(95, 23);
+            btnEncrypt.TabIndex = 0;
+            btnEncrypt.Text = "Encriptar";
+            btnEncrypt.UseCompatibleTextRendering = true;
+            btnEncrypt.UseVisualStyleBackColor = true;
+            btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
             // 
             // richTextBox1_encrypt_decryptor
             // 
@@ -67,36 +79,26 @@
             this.xprox_encrypt_decryptor.TabIndex = 4;
             this.xprox_encrypt_decryptor.Text = "Xprox - Encriptador y Desencriptador de contraseñas";
             // 
-            // radioBtn2_encrypt_decryptor
-            // 
-            this.radioBtn2_encrypt_decryptor.AutoSize = true;
-            this.radioBtn2_encrypt_decryptor.Location = new System.Drawing.Point(148, 29);
-            this.radioBtn2_encrypt_decryptor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioBtn2_encrypt_decryptor.Name = "radioBtn2_encrypt_decryptor";
-            this.radioBtn2_encrypt_decryptor.Size = new System.Drawing.Size(105, 24);
-            this.radioBtn2_encrypt_decryptor.TabIndex = 1;
-            this.radioBtn2_encrypt_decryptor.Text = "Desencriptar";
-            this.radioBtn2_encrypt_decryptor.UseVisualStyleBackColor = true;
-            // 
-            // radioBtn1_encrypt_decryptor
-            // 
-            this.radioBtn1_encrypt_decryptor.AutoSize = true;
-            this.radioBtn1_encrypt_decryptor.Location = new System.Drawing.Point(3, 29);
-            this.radioBtn1_encrypt_decryptor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioBtn1_encrypt_decryptor.Name = "radioBtn1_encrypt_decryptor";
-            this.radioBtn1_encrypt_decryptor.Size = new System.Drawing.Size(84, 24);
-            this.radioBtn1_encrypt_decryptor.TabIndex = 0;
-            this.radioBtn1_encrypt_decryptor.Text = "Encriptar";
-            this.radioBtn1_encrypt_decryptor.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioBtn1_encrypt_decryptor);
-            this.panel1.Controls.Add(this.radioBtn2_encrypt_decryptor);
+            this.panel1.Controls.Add(this.btnDecryptor);
+            this.panel1.Controls.Add(btnEncrypt);
             this.panel1.Location = new System.Drawing.Point(24, 76);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(470, 74);
             this.panel1.TabIndex = 5;
+            // 
+            // btnDecryptor
+            // 
+            this.btnDecryptor.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnDecryptor.Location = new System.Drawing.Point(145, 25);
+            this.btnDecryptor.Name = "btnDecryptor";
+            this.btnDecryptor.Size = new System.Drawing.Size(127, 23);
+            this.btnDecryptor.TabIndex = 1;
+            this.btnDecryptor.Text = "Desencriptar";
+            this.btnDecryptor.UseCompatibleTextRendering = true;
+            this.btnDecryptor.UseVisualStyleBackColor = true;
+            this.btnDecryptor.Click += new System.EventHandler(this.btnDecryptor_Click);
             // 
             // Form1
             // 
@@ -112,19 +114,16 @@
             this.Name = "Form1";
             this.Text = "Encriptador y Desencriptador de contraseñas";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private RadioButton radioBtn1_encrypt_decryptor;
-        private RadioButton radioBtn2_encrypt_decryptor;
         private RichTextBox richTextBox1_encrypt_decryptor;
         private RichTextBox richTextBox2_encryptor_decryptor;
         private Label xprox_encrypt_decryptor;
         private Panel panel1;
+        private Button btnDecryptor;
     }
 }
