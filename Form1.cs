@@ -40,8 +40,19 @@ namespace xprox_encryptor_decryptor
 
         private string EncryptText(string code)
         {
+            bool isValidText = IsPlainText(code);
+
             if (string.IsNullOrEmpty(code))
+            {
+                MessageBox.Show("Ingrese una contraseña para encriptar");
                 return string.Empty;
+            }
+
+            if (!isValidText)
+            {
+                MessageBox.Show("Texto plano inválido");
+                return string.Empty;
+            }
 
             using (Aes aesAlg = Aes.Create())
             {
@@ -67,8 +78,19 @@ namespace xprox_encryptor_decryptor
 
         private string DecryptText(string encrypt)
         {
+            bool isValidBase64 = IsBase64String(encrypt);
+
             if (string.IsNullOrEmpty(encrypt))
+            {
+                MessageBox.Show("Ingrese una contraseña encriptada");
                 return string.Empty;
+            }
+
+            if (!isValidBase64)
+            {
+                MessageBox.Show("Texto cifrado inválido");
+                return string.Empty;
+            }
 
             byte[] cipherText = Convert.FromBase64String(encrypt);
 
