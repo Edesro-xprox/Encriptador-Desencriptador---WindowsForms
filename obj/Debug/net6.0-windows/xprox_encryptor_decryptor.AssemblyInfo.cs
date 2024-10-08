@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xprox_encryptor_decryptor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c2bd2e2ba0236f9af9c882995e50ec8b19e448f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5649514a2018e662f4af0462b4d34305e39c83ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("xprox_encryptor_decryptor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xprox_encryptor_decryptor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -78,7 +78,7 @@ namespace xprox_encryptor_decryptor
 
         private string DecryptText(string encrypt)
         {
-            bool isValidBase64 = IsBase64String(encrypt);
+            bool isValidEncrypt = validEncrypt(encrypt);
 
             if (string.IsNullOrEmpty(encrypt))
             {
@@ -86,7 +86,7 @@ namespace xprox_encryptor_decryptor
                 return string.Empty;
             }
 
-            if (!isValidBase64)
+            if (!isValidEncrypt)
             {
                 MessageBox.Show("Texto cifrado inválido");
                 return string.Empty;
@@ -120,10 +120,24 @@ namespace xprox_encryptor_decryptor
             return Regex.IsMatch(input, @"^[a-zA-Z0-9\s]*$");
         }
 
-        private bool IsBase64String(string input)
+        private bool validEncrypt(string input)
         {
             input = input.Trim();
-            return (input.Length % 4 == 0) && Regex.IsMatch(input, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None);
+
+            if (input.Length % 4 != 0)
+            {
+                return false;
+            }
+
+            try
+            {
+                byte[] cipherText = Convert.FromBase64String(input);
+                return cipherText.Length >= 16 && cipherText.Length % 16 == 0;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
         }
 
     }
