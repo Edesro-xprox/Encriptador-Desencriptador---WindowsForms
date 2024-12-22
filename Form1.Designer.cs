@@ -28,95 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button btnEncrypt;
-            this.richTextBox1_encrypt_decryptor = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2_encryptor_decryptor = new System.Windows.Forms.RichTextBox();
-            this.xprox_encrypt_decryptor = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDecryptor = new System.Windows.Forms.Button();
-            btnEncrypt = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            Button btnEncrypt;
+            richTextBox1_encrypt_decryptor = new RichTextBox();
+            richTextBox2_encryptor_decryptor = new RichTextBox();
+            xprox_encrypt_decryptor = new Label();
+            panel1 = new Panel();
+            btnDecryptor = new Button();
+            btnEncrypt = new Button();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // btnEncrypt
             // 
-            btnEncrypt.Location = new System.Drawing.Point(15, 25);
+            btnEncrypt.Location = new Point(15, 25);
             btnEncrypt.Name = "btnEncrypt";
-            btnEncrypt.Size = new System.Drawing.Size(95, 23);
+            btnEncrypt.Size = new Size(95, 23);
             btnEncrypt.TabIndex = 0;
             btnEncrypt.Text = "Encriptar";
             btnEncrypt.UseCompatibleTextRendering = true;
             btnEncrypt.UseVisualStyleBackColor = true;
-            btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
+            btnEncrypt.Click += btnEncrypt_Click;
             // 
             // richTextBox1_encrypt_decryptor
             // 
-            this.richTextBox1_encrypt_decryptor.Location = new System.Drawing.Point(24, 157);
-            this.richTextBox1_encrypt_decryptor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.richTextBox1_encrypt_decryptor.Name = "richTextBox1_encrypt_decryptor";
-            this.richTextBox1_encrypt_decryptor.Size = new System.Drawing.Size(470, 356);
-            this.richTextBox1_encrypt_decryptor.TabIndex = 2;
-            this.richTextBox1_encrypt_decryptor.Text = "";
-            this.richTextBox1_encrypt_decryptor.TextChanged += new System.EventHandler(this.richTextBox1_encrypt_decryptor_TextChanged);
+            richTextBox1_encrypt_decryptor.Location = new Point(24, 157);
+            richTextBox1_encrypt_decryptor.Margin = new Padding(3, 4, 3, 4);
+            richTextBox1_encrypt_decryptor.Name = "richTextBox1_encrypt_decryptor";
+            richTextBox1_encrypt_decryptor.Size = new Size(470, 356);
+            richTextBox1_encrypt_decryptor.TabIndex = 2;
+            richTextBox1_encrypt_decryptor.Text = "";
+            richTextBox1_encrypt_decryptor.TextChanged += richTextBox1_encrypt_decryptor_TextChanged;
             // 
             // richTextBox2_encryptor_decryptor
             // 
-            this.richTextBox2_encryptor_decryptor.Location = new System.Drawing.Point(546, 157);
-            this.richTextBox2_encryptor_decryptor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.richTextBox2_encryptor_decryptor.Name = "richTextBox2_encryptor_decryptor";
-            this.richTextBox2_encryptor_decryptor.Size = new System.Drawing.Size(342, 356);
-            this.richTextBox2_encryptor_decryptor.TabIndex = 3;
-            this.richTextBox2_encryptor_decryptor.Text = "";
-            this.richTextBox2_encryptor_decryptor.TextChanged += new System.EventHandler(this.richTextBox2_encryptor_decryptor_TextChanged);
+            richTextBox2_encryptor_decryptor.Location = new Point(546, 157);
+            richTextBox2_encryptor_decryptor.Margin = new Padding(3, 4, 3, 4);
+            richTextBox2_encryptor_decryptor.Name = "richTextBox2_encryptor_decryptor";
+            richTextBox2_encryptor_decryptor.Size = new Size(342, 356);
+            richTextBox2_encryptor_decryptor.TabIndex = 3;
+            richTextBox2_encryptor_decryptor.Text = "";
+            richTextBox2_encryptor_decryptor.TextChanged += richTextBox2_encryptor_decryptor_TextChanged;
             // 
             // xprox_encrypt_decryptor
             // 
-            this.xprox_encrypt_decryptor.AutoSize = true;
-            this.xprox_encrypt_decryptor.Font = new System.Drawing.Font("Calibri", 14.26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.xprox_encrypt_decryptor.Location = new System.Drawing.Point(24, 29);
-            this.xprox_encrypt_decryptor.Name = "xprox_encrypt_decryptor";
-            this.xprox_encrypt_decryptor.Size = new System.Drawing.Size(453, 24);
-            this.xprox_encrypt_decryptor.TabIndex = 4;
-            this.xprox_encrypt_decryptor.Text = "Xprox - Encriptador y Desencriptador de contraseñas";
+            xprox_encrypt_decryptor.AutoSize = true;
+            xprox_encrypt_decryptor.Font = new Font("Calibri", 14.26F, FontStyle.Bold, GraphicsUnit.Point);
+            xprox_encrypt_decryptor.Location = new Point(24, 29);
+            xprox_encrypt_decryptor.Name = "xprox_encrypt_decryptor";
+            xprox_encrypt_decryptor.Size = new Size(453, 24);
+            xprox_encrypt_decryptor.TabIndex = 4;
+            xprox_encrypt_decryptor.Text = "Xprox - Encriptador y Desencriptador de contraseñas";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnDecryptor);
-            this.panel1.Controls.Add(btnEncrypt);
-            this.panel1.Location = new System.Drawing.Point(24, 76);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(470, 74);
-            this.panel1.TabIndex = 5;
+            panel1.Controls.Add(btnDecryptor);
+            panel1.Controls.Add(btnEncrypt);
+            panel1.Location = new Point(24, 76);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(470, 74);
+            panel1.TabIndex = 5;
             // 
             // btnDecryptor
             // 
-            this.btnDecryptor.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnDecryptor.Location = new System.Drawing.Point(145, 25);
-            this.btnDecryptor.Name = "btnDecryptor";
-            this.btnDecryptor.Size = new System.Drawing.Size(127, 23);
-            this.btnDecryptor.TabIndex = 1;
-            this.btnDecryptor.Text = "Desencriptar";
-            this.btnDecryptor.UseCompatibleTextRendering = true;
-            this.btnDecryptor.UseVisualStyleBackColor = true;
-            this.btnDecryptor.Click += new System.EventHandler(this.btnDecryptor_Click);
+            btnDecryptor.DialogResult = DialogResult.OK;
+            btnDecryptor.Location = new Point(145, 25);
+            btnDecryptor.Name = "btnDecryptor";
+            btnDecryptor.Size = new Size(127, 23);
+            btnDecryptor.TabIndex = 1;
+            btnDecryptor.Text = "Desencriptar";
+            btnDecryptor.UseCompatibleTextRendering = true;
+            btnDecryptor.UseVisualStyleBackColor = true;
+            btnDecryptor.Click += btnDecryptor_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 541);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.xprox_encrypt_decryptor);
-            this.Controls.Add(this.richTextBox2_encryptor_decryptor);
-            this.Controls.Add(this.richTextBox1_encrypt_decryptor);
-            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
-            this.Text = "Encriptador y Desencriptador de contraseñas";
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 541);
+            Controls.Add(panel1);
+            Controls.Add(xprox_encrypt_decryptor);
+            Controls.Add(richTextBox2_encryptor_decryptor);
+            Controls.Add(richTextBox1_encrypt_decryptor);
+            Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Encriptador y Desencriptador de contraseñas";
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

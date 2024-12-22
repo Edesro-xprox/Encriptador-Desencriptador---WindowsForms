@@ -15,18 +15,38 @@ namespace xprox_encryptor_decryptor
         public Form1()
         {
             InitializeComponent();
+            richTextBox2_encryptor_decryptor.ReadOnly = true;
         }
+
+
 
         private void btnEncrypt_Click(object sender, EventArgs e)
         {
-            codeEncrypt = EncryptText(code);
-            richTextBox2_encryptor_decryptor.Text = codeEncrypt;
+            string[] lines = richTextBox1_encrypt_decryptor.Text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+            StringBuilder encryptedText = new StringBuilder();
+
+            foreach (string line in lines)
+            {
+                //Cifrar cada línea por separado
+                codeEncrypt = EncryptText(line);
+                encryptedText.AppendLine(codeEncrypt);
+            }
+
+            richTextBox2_encryptor_decryptor.Text = encryptedText.ToString();
         }
 
         private void btnDecryptor_Click(object sender, EventArgs e)
         {
-            codeDecryptor = DecryptText(code);
-            richTextBox2_encryptor_decryptor.Text = codeDecryptor;
+            string[] lines = richTextBox1_encrypt_decryptor.Text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+            StringBuilder decryptedText = new StringBuilder();
+
+            foreach (string line in lines)
+            {
+                codeDecryptor = DecryptText(line);
+                decryptedText.AppendLine(codeDecryptor);
+            }
+            
+            richTextBox2_encryptor_decryptor.Text = decryptedText.ToString();
         }
 
         private void richTextBox1_encrypt_decryptor_TextChanged(object sender, EventArgs e)
@@ -40,17 +60,8 @@ namespace xprox_encryptor_decryptor
 
         private string EncryptText(string code)
         {
-            bool isValidText = IsPlainText(code);
-
             if (string.IsNullOrEmpty(code))
             {
-                MessageBox.Show("Ingrese una contraseña para encriptar");
-                return string.Empty;
-            }
-
-            if (!isValidText)
-            {
-                MessageBox.Show("Texto plano inválido");
                 return string.Empty;
             }
 
@@ -82,13 +93,11 @@ namespace xprox_encryptor_decryptor
 
             if (string.IsNullOrEmpty(encrypt))
             {
-                MessageBox.Show("Ingrese una contraseña encriptada");
                 return string.Empty;
             }
 
             if (!isValidEncrypt)
             {
-                MessageBox.Show("Texto cifrado inválido");
                 return string.Empty;
             }
 
@@ -112,12 +121,6 @@ namespace xprox_encryptor_decryptor
                     }
                 }
             }
-        }
-
-        private bool IsPlainText(string input)
-        {
-            input = input.Trim();
-            return Regex.IsMatch(input, @"^[a-zA-Z0-9\s]*$");
         }
 
         private bool validEncrypt(string input)

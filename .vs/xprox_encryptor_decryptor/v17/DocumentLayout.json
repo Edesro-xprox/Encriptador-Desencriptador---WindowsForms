@@ -7,9 +7,6 @@
       "RelativeMoniker": "D:0:0:{0BFE6016-7543-424F-B5F7-52FBBF3A3D94}|xprox_encryptor_decryptor.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\fe87c8dc81d92e12181cf11f488a7463ecea0a824349265317cd9139925d31b6\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BFE6016-7543-424F-B5F7-52FBBF3A3D94}|xprox_encryptor_decryptor.csproj|C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_encryptor_decryptor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0BFE6016-7543-424F-B5F7-52FBBF3A3D94}|xprox_encryptor_decryptor.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -21,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\fe87c8dc81d92e12181cf11f488a7463ecea0a824349265317cd9139925d31b6\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\fe87c8dc81d92e12181cf11f488a7463ecea0a824349265317cd9139925d31b6\\Form1.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\fe87c8dc81d92e12181cf11f488a7463ecea0a824349265317cd9139925d31b6\\Form1.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\fe87c8dc81d92e12181cf11f488a7463ecea0a824349265317cd9139925d31b6\\Form1.cs [Solo lectura]",
-              "ViewState": "AQIAAFgAAAAAAAAAAAASwG0AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:55:47.719Z",
-              "EditorCaption": " [Solo lectura]"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,21 +28,22 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_encryptor_decryptor\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAASwG8AAAAVAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T04:04:51.726Z",
+              "WhenOpened": "2024-12-21T23:01:30.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_encryptor_decryptor\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_encryptor_decryptor\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T03:35:40.326Z"
+              "WhenOpened": "2024-05-21T03:35:40.326Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
