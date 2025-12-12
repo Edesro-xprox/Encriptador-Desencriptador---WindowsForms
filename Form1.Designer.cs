@@ -73,11 +73,12 @@
             // 
             xprox_encrypt_decryptor.AutoSize = true;
             xprox_encrypt_decryptor.Font = new Font("Calibri", 14.26F, FontStyle.Bold, GraphicsUnit.Point);
-            xprox_encrypt_decryptor.Location = new Point(24, 29);
+            xprox_encrypt_decryptor.Location = new Point(24, 28);
             xprox_encrypt_decryptor.Name = "xprox_encrypt_decryptor";
-            xprox_encrypt_decryptor.Size = new Size(453, 24);
+            xprox_encrypt_decryptor.Size = new Size(515, 24);
             xprox_encrypt_decryptor.TabIndex = 4;
-            xprox_encrypt_decryptor.Text = "Xprox - Encriptador y Desencriptador de contraseñas";
+            xprox_encrypt_decryptor.Text = "Dev Espinoza - Encriptador y Desencriptador de contraseñas";
+            xprox_encrypt_decryptor.Click += xprox_encrypt_decryptor_Click;
             // 
             // panel1
             // 

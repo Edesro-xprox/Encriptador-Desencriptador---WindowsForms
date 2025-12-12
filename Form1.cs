@@ -45,7 +45,7 @@ namespace xprox_encryptor_decryptor
                 codeDecryptor = DecryptText(line);
                 decryptedText.AppendLine(codeDecryptor);
             }
-            
+
             richTextBox2_encryptor_decryptor.Text = decryptedText.ToString();
         }
 
@@ -55,7 +55,7 @@ namespace xprox_encryptor_decryptor
         }
         private void richTextBox2_encryptor_decryptor_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private string EncryptText(string code)
@@ -143,5 +143,9 @@ namespace xprox_encryptor_decryptor
             }
         }
 
+        private void xprox_encrypt_decryptor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
