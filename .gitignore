@@ -1,0 +1,34 @@
+# =====================
+# .NET / Visual Studio
+# =====================
+bin/
+obj/
+
+# Visual Studio local
+.vs/
+*.user
+*.suo
+
+# =====================
+# Build / Publish
+# =====================
+[Bb]uild/
+[Bb]uilds/
+publish/
+
+# =====================
+# Logs
+# =====================
+*.log
+
+# =====================
+# Environment / Local config
+# =====================
+appsettings.Development.json
+appsettings.Local.json
+
+# =====================
+# OS
+# =====================
+Thumbs.db
+.DS_Store
