@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Security.Principal;
 using System.Text;
 
 namespace xprox_encryptor_decryptor.ValidatorSpace
@@ -24,6 +26,29 @@ namespace xprox_encryptor_decryptor.ValidatorSpace
             {
                 return false;
             }
+        }
+
+        public bool validExistKeys(string master, string key, string iv)
+        {
+            if (
+                string.IsNullOrEmpty(master) ||
+                string.IsNullOrEmpty(key) ||
+                string.IsNullOrEmpty(iv))
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool validLengthKeys(string master, string key, string iv) { 
+            if(
+                master.Length == 16 ||
+                key.Length == 32 ||
+                iv.Length == 16)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

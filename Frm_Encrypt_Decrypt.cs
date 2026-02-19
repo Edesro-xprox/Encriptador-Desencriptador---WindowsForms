@@ -5,23 +5,45 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using xprox_encryptor_decryptor.CryptoSpace;
+using xprox_encryptor_decryptor.ValidatorSpace;
 
 namespace xprox_encryptor_decryptor
 {
-    public partial class Form1 : Form
+    public partial class Frm_Encrypt_Decrypt : Form
     {
-        string codeEncrypt = "", codeDecryptor = "", master = "devespinoz@";
-        byte[] masterBytes = null;
-        Crypto cyp;
+        string codeEncrypt, codeDecryptor;
+        byte[] masterBytes;
+        Crypto cyp; Validator vld;
 
-        private static byte[] fixedKey = Encoding.UTF8.GetBytes("12345678901234567890123456789012");
-        private static byte[] fixedIV = Encoding.UTF8.GetBytes("1234567890123456");
+        string master, key, iv;
 
-        public Form1()
+        private byte[] fixedKey;
+        private byte[] fixedIV;
+
+        public Frm_Encrypt_Decrypt()
         {
+            vld = new Validator();
+
+            master = AppConfig.Configuration["Settings:master"];
+            key = AppConfig.Configuration["Settings:key"];
+            iv = AppConfig.Configuration["Settings:iv"];
+
+            if (
+                (!vld.validExistKeys(master, key, iv)) ||
+                (!vld.validLengthKeys(master, key, iv))
+            )
+            {
+                MessageBox.Show("Configuración AES incorrecta");
+                Application.Exit();
+                return;
+            }
+
+            fixedKey = Encoding.UTF8.GetBytes(key);
+            fixedIV = Encoding.UTF8.GetBytes(iv);
+
             InitializeComponent();
             richTextBox2_encryptor_decryptor.ReadOnly = true;
-            textBox1.Text = master;
+            txtMaster.Text = master;
             cyp = new Crypto(fixedKey, fixedIV);
         }
 
@@ -70,9 +92,9 @@ namespace xprox_encryptor_decryptor
         }
 
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtMaster_TextChanged(object sender, EventArgs e)
         {
-            master = textBox1.Text;
+            master = txtMaster.Text;
         }
     }
 }
